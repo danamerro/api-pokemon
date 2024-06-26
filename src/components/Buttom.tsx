@@ -1,12 +1,12 @@
 import "../sass/Button.scss";
 
 interface ButtomProps {
-  text: string;
+  text: React.ReactNode;
 }
 
 const Buttom = ({ text }: ButtomProps) => {
   return (
-    <div className="button__box">
+    <div className="button_box">
       <button className="button">{text}</button>
     </div>
   );

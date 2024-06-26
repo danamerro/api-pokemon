@@ -1,5 +1,7 @@
 import { Buttom } from "./components/Buttom"
 import './sass/App.scss'
+import { TiArrowLeftOutline } from "react-icons/ti";
+import { TiArrowRightOutline } from "react-icons/ti";
 
 
 
@@ -9,8 +11,8 @@ const App = () =>{
   <>
       {/* tarjetas */}
       <div className="buttons-container">
-      <Buttom text= 'Anterior'/>
-      <Buttom text= 'Siguiente'/>
+      <Buttom text= {<TiArrowLeftOutline />} />
+      <Buttom text= {<TiArrowRightOutline />}/>
       </div>
       
   </>
