@@ -14,19 +14,22 @@ const App = () => {
   //actualiza la variable 1 en 1
   const [pokemonId, setPokemonId] = useState(1);
 
-  useEffect(() => {
-    console.log(pokemonId);
-  }, [pokemonId]); // Agregar pokemonId como dependencia para que el efecto se ejecute cuando cambie
+  useEffect(()=>{
+    console.log(pokemonId)
+  })
 
   //logica boton atras
   function prevClick() {
     setPokemonId((prevId) => (prevId === 1 ? 1 : prevId - 1));
   }
 
+
   //logica boton adelante
   function nextClick() {
     setPokemonId((prevId) => prevId + 1);
   }
+
+ 
 
   return (
     <>
@@ -39,6 +42,8 @@ const App = () => {
         {pokemonId}
         <Button icon={<TiArrowRightOutline />} handleClick={nextClick} />
       </div>
+
+      
     </>
   );
 };
